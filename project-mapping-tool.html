@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Project Mapping Tool | Jaxon Moffitt</title>
+  <meta content="A browser-based tool for building real estate project site maps with distance rings and nearby place callouts." name="description">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/site/profile.jpg" alt="Jaxon Moffitt" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Jaxon Moffitt</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.linkedin.com/in/jaxon-moffitt" class="linkedin" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Jaxon-Moffitt" class="github" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="mailto:jaxon@moffitts.us" class="email" aria-label="Email"><i class="bi bi-envelope"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio" class="active"><i class="bi bi-grid navicon"></i> Projects</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Project Mapping Tool</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#portfolio">Projects</a></li>
+            <li class="current">Project Mapping Tool</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <a href="assets/img/portfolio-projects/project-mapping-tool.png" class="glightbox">
+              <img src="assets/img/portfolio-projects/project-mapping-tool.png" class="img-fluid project-shot" alt="Project Mapping Tool showing the Foster Yards demo site in Portland with distance rings and nearby place callouts">
+            </a>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web app, GIS</li>
+                <li><strong>Built with</strong>: JavaScript, Leaflet, MapLibre GL, proj4js</li>
+                <li><strong>Live demo</strong>: <a href="https://jaxon-moffitt.github.io/project-mapping-tool-demo" target="_blank" rel="noopener">Open the tool</a></li>
+              </ul>
+              <a class="btn-demo" href="https://jaxon-moffitt.github.io/project-mapping-tool-demo" target="_blank" rel="noopener"><i class="bi bi-box-arrow-up-right"></i> Try the demo</a>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Site maps without the GIS software</h2>
+              <p>
+                A browser-based tool for making project location maps: the site boundary, distance rings, and labeled callouts for the schools, parks, transit, and shopping nearby. Draw or import the site, add places, and export a clean PNG.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row gy-4 mt-2">
+          <div class="col-lg-8 portfolio-description" data-aos="fade-up">
+            <h2>What it does</h2>
+            <ul class="feature-list">
+              <li><strong>Site boundaries from anything.</strong> Draw a boundary, drop a point, search an address, or load GeoJSON, Esri JSON (ArcGIS exports), or a coordinate list. Oregon State Plane, Oregon Lambert, and UTM coordinates are converted automatically, and the tool reports the site's acreage.</li>
+              <li><strong>Distance rings.</strong> Set any radii in miles; rings and place distances are measured in a straight line from the center of the site.</li>
+              <li><strong>Nearby places as callouts.</strong> Add places one at a time, import a file, or paste a list straight from Excel. Icons are guessed from each place's name, and callouts can be dragged and recolored.</li>
+              <li><strong>Presentation-ready output.</strong> Several basemaps and layers, road labels, a north arrow and scale bar, imagery shading so callouts stand out on satellite views, and a one-click PNG export or clean view.</li>
+              <li><strong>Saved maps.</strong> Save maps in the browser, or save to a file you can back up, email, or open on another computer.</li>
+            </ul>
+            <p class="text-muted small">The demo includes five sample projects around Oregon. The project sites and "Fernhollow Development" are fictional; the nearby places are real.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Jaxon Moffitt</strong></p>
+      </div>
+      <div class="credits">
+        <!-- Licensing information: https://bootstrapmade.com/license/ (free version requires these credit links) -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+/* Site-specific additions on top of the iPortfolio template (main.css). */
+
+/* About photo */
+.about .about-photo {
+  border-radius: 8px;
+}
+
+/* Skills: grouped tags instead of percentage bars */
+.skills .skill-group {
+  background: var(--surface-color);
+  border-radius: 8px;
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.skills .skill-group h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.skills .skill-group h4 i {
+  color: var(--accent-color);
+  margin-right: 6px;
+}
+
+.skills .skill-tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skills .skill-tags li {
+  font-size: 14px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent-color), transparent 88%);
+  color: var(--heading-color);
+}
+
+/* Resume links */
+.resume .resume-item a {
+  color: var(--default-color);
+}
+
+.resume .resume-item a:hover {
+  color: var(--accent-color);
+}
+
+/* Contact cards */
+.contact .contact-card {
+  display: block;
+  text-align: center;
+  padding: 32px 20px;
+  border-radius: 8px;
+  background: var(--surface-color);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  color: var(--default-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+}
+
+.contact .contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact .contact-card i {
+  font-size: 28px;
+  color: var(--accent-color);
+}
+
+.contact .contact-card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 12px 0 6px;
+}
+
+.contact .contact-card p {
+  margin: 0;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+/* Project details */
+.portfolio-details .project-shot {
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.portfolio-details .btn-demo {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 22px;
+  border-radius: 50px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  font-weight: 500;
+}
+
+.portfolio-details .btn-demo:hover {
+  background: color-mix(in srgb, var(--accent-color), black 15%);
+}
+
+.portfolio-details .feature-list {
+  padding-left: 1.2rem;
+}
+
+.portfolio-details .feature-list li {
+  margin-bottom: 12px;
+}
+
+/* Hero: dark overlay on the photo so the name stays readable */
+.hero img {
+  object-position: 70% 40%;
+}
+
+.hero:before {
+  background: linear-gradient(90deg, rgba(4, 11, 20, 0.75) 0%, rgba(4, 11, 20, 0.45) 55%, rgba(4, 11, 20, 0.15) 100%);
+}
+
+/* About: "Outside of work" photo strip */
+.about .life-photos {
+  margin-top: 48px;
+}
+
+.about .life-photos h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.about .life-photos img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.about .life-photos a:hover img {
+  transform: scale(1.03);
+}
+
+.about .life-photos a {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+}

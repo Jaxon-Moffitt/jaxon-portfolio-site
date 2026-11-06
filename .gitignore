@@ -1,0 +1,14 @@
+# Original template download (kept locally for reference)
+iPortfolio/
+
+# Private resume notes (not for the public site repo)
+resume-master-record.md
+
+# OS / editor
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+
+# Full-size personal photos (contain GPS data); web copies live in assets/img/site/
+assets/img/jaxon/
