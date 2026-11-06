@@ -116,7 +116,7 @@
 
 /* Hero: dark overlay on the photo so the name stays readable */
 .hero img {
-  object-position: 70% 40%;
+  object-position: 70% 0%;
 }
 
 .hero:before {
