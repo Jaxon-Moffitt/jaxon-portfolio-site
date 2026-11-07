@@ -60,6 +60,7 @@
       <ul>
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#skills"><i class="bi bi-lightning-charge navicon"></i> Skills</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-grid navicon"></i> Projects</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
@@ -119,7 +120,7 @@
               </div>
             </div>
             <p class="py-3">
-              Since November 2022 I've been a Project Coordinator for finance and market at Neighborly Development in Salem, Oregon, a real estate developer working mostly on market-rate multifamily projects, along with some affordable and mixed-affordability deals. I've modeled more than 10 deals (the largest a 264-unit multifamily project of roughly $60M) and I present that analysis directly to investors. Lately my work has shifted toward building internal tools, automating processes, and centralizing the company's data. One example is the Project Mapping Tool below, which should turn a site map that used to take an hour or more into a 10 to 15 minute job.
+              Since November 2022 I've been a Project Coordinator for finance and market at Neighborly Development in Salem, Oregon, a real estate developer working mostly on market-rate multifamily projects, along with some affordable and mixed-affordability deals. I've delivered market and financial analysis on more than 10 projects totaling over $360 million and 1,000+ units, and I present that work directly to investors, lenders, and partners. Lately my work has shifted toward building internal tools, automating processes, and centralizing the company's data. One example is the Project Mapping Tool below, which should turn a site map that used to take an hour or more into a 10 to 15 minute job.
             </p>
             <p>
               Before that, I maintained and extended Oregon's Driver and Vehicle Services software as an implementation consultant with FAST Enterprises on an Oregon Department of Transportation project, and built a developer dashboard in React and .NET Core as an intern at Restaurant365. I'm now working on a Master of Science in Analytics at Georgia Tech and looking for data science and analytics roles where a real estate finance background is an asset.
@@ -186,6 +187,7 @@
                 <li>RESTful APIs</li>
                 <li>CI/CD</li>
                 <li>Agile, full SDLC</li>
+                <li>Claude Code</li>
               </ul>
             </div>
           </div>
@@ -238,7 +240,7 @@
 
             <div class="resume-item pb-0">
               <h4>Jaxon Moffitt</h4>
-              <p><em>Analyst and developer with four years in real estate development finance and a background in software development. Builds financial models, internal tools, and data infrastructure, and presents the results to investors and non-technical teams.</em></p>
+              <p><em>Real estate finance analyst with four years in multifamily development and a background in software engineering. Builds underwriting models, automation, and internal tools with Excel, VBA, SQL, and Python, and presents the results to investors, lenders, and partners.</em></p>
               <ul>
                 <li>Salem, Oregon (open to remote or relocation)</li>
                 <li><a href="mailto:jaxon@moffitts.us">jaxon@moffitts.us</a></li>
@@ -269,40 +271,46 @@
               <h5>Nov 2022 - Present</h5>
               <p><em>Neighborly Development, Salem, OR</em></p>
               <ul>
-                <li>Model market-rate, affordable, and mixed-affordability multifamily deals; 10+ deals modeled, the largest a 264-unit multifamily project of roughly $60M.</li>
-                <li>Present financial reports and analyses directly to investors.</li>
-                <li>Conduct market research for prospective projects.</li>
-                <li>Build internal tools, process automation, and centralized data infrastructure for the development team.</li>
+                <li>Replaced Argus with an Excel underwriting model across 7 projects, eliminating duplicate manual entry, reducing reporting errors, and cutting monthly investor reporting from 7 days to 3.</li>
+                <li>Added VBA automation to the model, taking metric calculation from hours to minutes and making same-day scenario turnaround routine.</li>
+                <li>Delivered market and financial analysis on 10+ development projects totaling over $360 million and 1,000+ units, 6 of which have been completed and 3 of which are under construction.</li>
+                <li>Model capital stacks for affordable housing developments financed with 4% Low-Income Housing Tax Credits (LIHTC), tax-exempt bonds, and Oregon LIFT, including a 183-unit project.</li>
+                <li>Size construction and permanent loans against lender term sheets, tracking DSCR, LTV, and LTC, and prepare the financial and market data behind lender packages through closing.</li>
+                <li>Presented project closeout reviews to investor investment committees for 2 developments, comparing final costs, returns, lease-up, and schedule against the original underwriting.</li>
+                <li>Use SQL to pull historical market data from the company's Oracle database and Python to clean, analyze, and chart it for investor reports.</li>
+                <li>Cut report production time by about 75% using Claude in Excel to analyze data and package it into formatted reports, with a review loop that verifies every figure before release.</li>
               </ul>
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
               <h4>Implementation Consultant</h4>
-              <h5>2020 - 2022</h5>
-              <p><em>FAST Enterprises, Oregon Department of Transportation project</em></p>
+              <h5>Sep 2020 - Oct 2022</h5>
+              <p><em>FAST Enterprises (Oregon Department of Transportation project), Salem, OR</em></p>
               <ul>
-                <li>Maintained and built new functionality for Oregon's Driver and Vehicle Services software, which serves 3M+ licensed drivers and 4M+ vehicles.</li>
-                <li>Wrote SQL daily against the production database.</li>
-                <li>Worked across the full software development life cycle on deadline-driven releases.</li>
-                <li>Translated technical processes into plain terms for non-technical stakeholders.</li>
+                <li>Queried Oregon's production DMV database daily with SQL (Microsoft SQL Server) to research issues and support development for a system serving 3 million drivers and 4 million vehicles.</li>
+                <li>Led delivery of the software change that let Oregon drivers request duplicate license plates, carrying it from statute language through requirements to production release.</li>
+                <li>Kept ODOT systems compliant with changing state and federal law by translating legislative requirements into scoped software changes.</li>
+                <li>Provided on-site live support at DMV offices in week-long rotations during the rollout, and demoed new features to the ODOT development team.</li>
               </ul>
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
-              <h4>Associate Developer</h4>
+              <h4>Associate Software Engineer</h4>
               <h5>Sep 2019 - Mar 2020</h5>
-              <p><em>Restaurant365</em></p>
-              <!-- TODO: add 2-3 bullets once Jaxon describes this role -->
+              <p><em>Restaurant365, Provo, UT (Remote)</em></p>
+              <ul>
+                <li>Resolved customer-reported defects in restaurant accounting software by finding and fixing bugs in the company's AngularJS codebase.</li>
+                <li>Assisted the QA team in testing new features and fixes.</li>
+              </ul>
             </div><!-- End Resume Item -->
 
             <div class="resume-item">
               <h4>Software Development Intern</h4>
               <h5>Jun 2019 - Aug 2019</h5>
-              <p><em>Restaurant365</em></p>
+              <p><em>Restaurant365, Irvine, CA</em></p>
               <ul>
-                <li>Built a dashboard in React and .NET Core that showed product versioning information, making it easier for developers to address system issues.</li>
-                <li>Developed RESTful APIs and shipped through a CI/CD pipeline on an agile team.</li>
-                <li>Worked directly with the internal developers who used the tool.</li>
+                <li>Shipped an environment version dashboard to production end to end, giving developers versioning information across environments.</li>
+                <li>Built it with React and C# / .NET Core, using RESTful APIs and a CI/CD pipeline, through the full SDLC in an agile environment.</li>
               </ul>
             </div><!-- End Resume Item -->
 
