@@ -124,7 +124,7 @@
           <div class="col-lg-8 portfolio-description" data-aos="fade-up">
             <h2>The problem</h2>
             <p>
-              Investor updates used to be put together by hand each quarter from spreadsheets, PDFs and email threads. That took managers a lot of time, gave investors no view of progress between reports, and made it easy to send a half-finished budget or draft schedule by mistake.
+              Investor updates used to be put together by hand each month from spreadsheets, PDFs and email threads. That took managers a lot of time, gave investors no view of progress between reports, and made it easy to send a half-finished budget or draft schedule by mistake.
             </p>
             <p>
               The key design decision was to <strong>separate editing from publishing</strong>. Managers can work on drafts freely. Investors see nothing new until a manager reviews a summary of what changed and publishes it.
@@ -373,7 +373,8 @@
         release_time, timezone
     }
     class VarianceReport {
-        report_date
+        name, report_date
+        is_draft
     }
     class VarianceItem {
         gl_number, budget
@@ -394,11 +395,17 @@
         visibility
         visible_to_emails[]
     }
-    class ThreadMessage
+    class ThreadMessage {
+        content
+        file_urls[]
+    }
     class OrgChart {
         nodes, edges
     }
-    class EntityDocument
+    class EntityDocument {
+        node_id, name
+        file_type
+    }
 
     User "many" -- "many" Project : assigned via email lists
     Project "1" --&gt; "many" PublishedSection : published snapshot
@@ -446,7 +453,7 @@
 
             <h2 class="mt-5">Outcome</h2>
             <p>
-              A manual quarterly process became a continuously updated portal with a review step before anything is published. Investor reports are built from data that's already in the system and go out on schedule without anyone stepping in. The company decides exactly what each investor sees, down to individual tabs, metrics and threads.
+              A manual monthly process became a continuously updated portal with a review step before anything is published. Investor reports are built from data that's already in the system and go out on schedule without anyone stepping in. The company decides exactly what each investor sees, down to individual tabs, metrics and threads.
             </p>
             <p class="text-muted small">About 25,000 lines of application code: ~140 feature components, 37 data entities and 7 serverless functions. Project data is confidential, so this page shows the architecture rather than screenshots.</p>
           </div>
