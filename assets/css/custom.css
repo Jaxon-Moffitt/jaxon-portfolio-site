@@ -194,3 +194,81 @@
 .portfolio-details pre.mermaid svg {
   height: auto;
 }
+
+/* Sidebar: compact in steps on short windows so the menu fits without a scrollbar */
+.header {
+  scrollbar-width: none; /* still scrolls on very short windows, just without a visible bar */
+}
+
+.header::-webkit-scrollbar {
+  display: none;
+}
+
+.header .profile-img img,
+.header .navmenu a {
+  transition: width 0.3s, padding 0.3s, margin 0.3s;
+}
+
+@media (max-height: 700px) {
+  .header .profile-img img {
+    width: 96px;
+    margin: 12px auto;
+    border-width: 6px;
+  }
+
+  .header .social-links {
+    margin-bottom: 14px;
+  }
+
+  .header .navmenu a {
+    padding: 11px 10px;
+  }
+
+  .header .navmenu ul {
+    padding-bottom: 12px;
+  }
+}
+
+@media (max-height: 560px) {
+  .header .profile-img img {
+    width: 64px;
+    margin: 10px auto;
+    border-width: 4px;
+  }
+
+  .header .logo {
+    margin-bottom: 10px;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header .social-links {
+    margin-bottom: 8px;
+  }
+
+  .header .social-links a {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+
+  .header .navmenu a {
+    padding: 8px 10px;
+  }
+
+  .header .navmenu ul {
+    padding-bottom: 8px;
+  }
+}
+
+@media (max-height: 440px) {
+  .header .profile-img {
+    display: none;
+  }
+
+  .header .logo {
+    margin-top: 16px;
+  }
+}
